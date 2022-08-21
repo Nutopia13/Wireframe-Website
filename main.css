@@ -1,0 +1,286 @@
+@charset "UTF-8";
+@-webkit-keyframes pulse {
+  25% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+}
+@keyframes pulse {
+  25% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+}
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #005DFF;
+  color: antiquewhite;
+}
+
+body, html {
+  height: 100%;
+}
+
+.main_header {
+  padding-left: 1em;
+  text-decoration: underline;
+}
+
+h2 {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 1em;
+}
+
+.colors {
+  background-color: aliceblue;
+  color: black;
+  border: 1px solid blanchedalmond;
+  border-radius: 15px;
+  width: 45%;
+  height: 50%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.colors__head {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 1em;
+}
+.colors__colorcontainer {
+  display: inline;
+}
+.colors__darkblue:hover {
+  -webkit-animation: pulse 1s ease-in infinite;
+          animation: pulse 1s ease-in infinite;
+}
+.colors__darkblue {
+  background-color: #293462;
+  color: antiquewhite;
+  width: 25%;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #293462;
+  border-radius: 10px;
+  margin: 1em 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: inline-block;
+}
+.colors__azure {
+  background-color: #1CD6CE;
+  color: antiquewhite;
+  width: 25%;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #1CD6CE;
+  border-radius: 10px;
+  margin: 1em 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: inline-block;
+}
+.colors__dawn {
+  background-color: #FEDB39;
+  color: rgb(0, 0, 0);
+  width: 25%;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #FEDB39;
+  border-radius: 10px;
+  margin: 1em 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: inline-block;
+}
+.colors__darkred {
+  background-color: #D61C4E;
+  color: antiquewhite;
+  width: 25%;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #D61C4E;
+  border-radius: 10px;
+  margin: 1em 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: inline-block;
+}
+.colors__peace {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 35%;
+  margin-bottom: 80%;
+}
+.colors .colors img {
+  width: 200px;
+  height: 200px;
+}
+
+.fonts {
+  background-color: aliceblue;
+  color: black;
+  border: 1px solid blanchedalmond;
+  border-radius: 15px;
+  width: 45%;
+  height: 70%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 3em;
+}
+.fonts__head {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 1em;
+}
+.fonts__helveticacont {
+  border-bottom: 1px solid black;
+  font-family: Helvetica, sans-serif;
+  margin-left: 0.7em;
+}
+.fonts__helveticabold {
+  font-weight: bold;
+}
+.fonts__helveticaitalian {
+  font-style: italic;
+}
+.fonts__timesnewromancont {
+  border-bottom: 1px solid black;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 0.7em;
+}
+.fonts__timesnewromanbold {
+  font-weight: bold;
+}
+.fonts__timesnewromanitalic {
+  font-style: italic;
+}
+.fonts__arialcont {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 0.7em;
+}
+.fonts__arialbold {
+  font-weight: bold;
+}
+.fonts__arialitalic {
+  font-style: italic;
+}
+
+.text {
+  background-color: aliceblue;
+  color: black;
+  border: 1px solid blanchedalmond;
+  border-radius: 15px;
+  width: 45%;
+  height: 62%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 3em;
+  margin-bottom: 5em;
+  text-decoration: none;
+}
+.text__heading {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 1em;
+}
+.text__h1cont {
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid black;
+  margin-left: 0.7em;
+}
+.text__h1count ul {
+  line-height: 0.2em;
+}
+.text__h2head {
+  margin-left: 1em;
+}
+.text__h2cont {
+  font-family: Helvetica, sans-serif;
+  border-bottom: 1px solid black;
+  margin-left: 1em;
+}
+.text__phead {
+  margin-left: 1em;
+}
+.text__pcont {
+  font-family: Helvetica, sans-serif;
+  margin-left: 1em;
+}
+
+span {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+#p {
+  text-decoration: underline;
+  font-style: normal;
+}
+
+.emoji-toggle {
+  position: relative;
+  width: 60px;
+  margin: 40px auto;
+  margin-right: 50%;
+}
+.emoji-toggle .well {
+  display: block;
+  background: #eee;
+  height: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.emoji-toggle .toggle {
+  opacity: 0;
+  border: 0;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
+}
+.emoji-toggle .toggle ~ .emoji:before {
+  content: "🐱";
+  position: absolute;
+  left: 0;
+  top: -15px;
+  font-size: 40px;
+  transition: 0.2s;
+}
+.emoji-toggle .toggle:checked ~ .emoji:before {
+  left: 100%;
+  margin-left: -1em;
+}
+.emoji-toggle .toggle ~ label {
+  white-space: nowrap;
+}
+.emoji-toggle .toggle ~ label:before {
+  position: absolute;
+  right: 100%;
+  margin-right: 5px;
+  top: 0;
+}
+.emoji-toggle .toggle ~ label:after {
+  position: absolute;
+  left: 100%;
+  margin-left: 5px;
+  top: 0;
+}
+
+.emoji-vote .toggle ~ .emoji:before {
+  content: "👍";
+}
+.emoji-vote .toggle:checked ~ .emoji:before {
+  content: "👎";
+}
+.emoji-vote .toggle ~ label:before {
+  content: "Like";
+}
+.emoji-vote .toggle ~ label:after {
+  content: "Nah, do better!";
+}/*# sourceMappingURL=main.css.map */

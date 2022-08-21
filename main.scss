@@ -1,0 +1,327 @@
+$colors: (
+primary: #005DFF,
+accent: #FFF6BB
+);
+@function color($color-name) {
+@return map-get($colors, $color-name)
+}
+
+@keyframes pulse{
+    25%  {transform: scale(0.9);}
+    75%  {transform: scale(1.1);}
+  }
+
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #005DFF;
+    color:antiquewhite;
+}
+
+body, html{
+    height: 100%;
+}
+
+.main_header{
+    padding-left: 1em;
+    text-decoration: underline;
+}
+h2{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1em;
+}
+
+.colors{
+    background-color: aliceblue;
+    color:black;
+    border: 1px solid blanchedalmond;
+    border-radius: 15px;
+    width: 45%;
+    height: 50%;
+    margin:auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+
+    &__head{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 1em;
+    }
+
+    &__colorcontainer{
+        display: inline;
+        
+       
+    }
+    &__darkblue:hover{
+        animation: pulse 1s ease-in infinite;
+    }   
+
+
+
+    &__darkblue{
+        background-color: #293462;
+        color:antiquewhite;
+        width: 25%;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid #293462;
+        border-radius: 10px;
+        margin: 1em .5em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: inline-block;
+    }
+
+    
+    
+    &__azure{
+        background-color: #1CD6CE;
+        color:antiquewhite;
+        width: 25%;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid #1CD6CE;
+        border-radius: 10px;
+        margin: 1em .5em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: inline-block;
+
+    }
+
+    &__dawn{
+        background-color: #FEDB39;
+        color: rgb(0, 0, 0);
+        width: 25%;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid #FEDB39;
+        border-radius: 10px;
+        margin: 1em .5em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: inline-block;
+
+    }
+    
+    &__darkred{
+        background-color: #D61C4E;
+        color: antiquewhite;
+        width: 25%;
+        text-align: center;
+        font-weight: bold;
+        border: 1px solid #D61C4E;
+        border-radius: 10px;
+        margin: 1em .5em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+        display: inline-block;
+    }
+    &__peace{
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: 35%;
+        margin-bottom: 80%;
+
+    }
+    .colors img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    
+
+
+
+}
+
+// Fonts
+.fonts{
+    background-color: aliceblue;
+    color:black;
+    border: 1px solid blanchedalmond;
+    border-radius: 15px;
+    width: 45%;
+    height:70%;
+    margin:auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 3em;
+
+    &__head{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 1em;
+    }
+    &__helveticacont{
+        border-bottom: 1px solid black;
+        font-family: Helvetica, sans-serif;
+        margin-left: .7em;
+    }
+    &__helveticabold{
+        font-weight: bold;
+    }
+    &__helveticaitalian{
+        font-style: italic;
+    }
+
+    &__timesnewromancont{
+        border-bottom: 1px solid black ;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: .7em;
+    }
+
+    &__timesnewromanbold{
+        font-weight: bold;
+    }
+    &__timesnewromanitalic{
+        font-style: italic;
+    }
+
+    &__arialcont{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: .7em;
+    }
+    &__arialbold{
+        font-weight: bold;
+    }
+    &__arialitalic{
+        font-style: italic;
+    }
+
+}
+// Text Styles
+.text{
+    background-color: aliceblue;
+    color:black;
+    border: 1px solid blanchedalmond;
+    border-radius: 15px;
+    width: 45%;
+    height:62%;
+    margin:auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 3em;
+    margin-bottom: 5em;
+    text-decoration: none;
+
+    &__heading{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 1em;;
+    }
+
+    &__h1cont{
+        font-family: Arial, Helvetica, sans-serif;
+        border-bottom: 1px solid black;
+        margin-left: .7em;
+    }
+    &__h1count ul{
+        line-height: .2em;
+    }
+    &__h2head{
+        margin-left: 1em;
+    }
+    &__h2cont{
+        font-family: Helvetica, sans-serif;
+        border-bottom: 1px solid black;
+        margin-left: 1em;
+    }
+    &__phead{
+        margin-left: 1em;
+    }
+    &__pcont{
+        font-family: Helvetica, sans-serif;
+        margin-left: 1em;
+    }
+}
+
+span{
+    font-style: italic;
+    text-decoration: underline;
+}
+#p{
+    text-decoration: underline;
+    font-style:normal;
+}
+
+
+// Base class
+.emoji-toggle {
+    position: relative;
+    width: 60px;
+    margin: 40px auto;
+    margin-right: 50%;
+    .well {
+      display: block;
+      background: #eee;
+      height: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .toggle {
+      opacity: 0;
+      border: 0;
+      outline: none;
+      height: 100%;
+      width: 100%;
+      background: transparent;
+      position: absolute;
+      cursor: pointer;
+      z-index: 100; 
+      ~.emoji:before {
+        content: "\01F431";
+        position: absolute;
+        left: 0;
+        top: -15px;
+        font-size: 40px;
+        transition: 0.2s;
+      }
+      &:checked {
+        ~.emoji:before {
+          left: 100%;
+          margin-left: -1em;
+        }
+      }
+      ~label {
+        white-space: nowrap;
+        &:before {
+          position: absolute;
+          right: 100%;
+          margin-right: 5px;
+          top: 0;
+        }
+        &:after {
+          position: absolute;
+          left: 100%;
+          margin-left: 5px; 
+          top: 0;
+        }
+      }
+    }
+  }
+  
+  @mixin emojiType($leftEmoji, $rightEmoji, $leftLabel, $rightLabel) {
+    .toggle {
+      ~.emoji:before {
+        content: $leftEmoji;
+      }
+      &:checked {
+        ~.emoji:before {
+          content: $rightEmoji;
+        }
+      }
+       ~label {
+        &:before {
+          content: $leftLabel;
+        }
+        &:after {
+          content: $rightLabel;
+        }
+      }
+    }
+  }
+
+  .emoji-vote {
+    @include emojiType(
+      "\01F44D", "\01F44E", "Like", "Nah, do better!"
+    );
+  }
+  
